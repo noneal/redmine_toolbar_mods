@@ -5,7 +5,7 @@ Written by: Tavish Armstrong
 Updated by: Noah O Neal
 
 Last updated: Sept. 17 2013
-
+ = updated to work with Redmine 2.X
 
 == Overview
 
