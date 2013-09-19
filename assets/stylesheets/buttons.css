@@ -1,18 +1,11 @@
 /*
- * Buttons for jstoolbar
+ * Colour Buttons for jstoolbar
  */
-.jstb_sql {
-        background-image: url(../images/bt_sql.png);
+.jstb_red {
+        background-image: url(../images/bt_red.png);
 }
-.jstb_js {
-        background-image: url(../images/bt_js.png);
+.jstb_blue {
+        background-image: url(../images/bt_blue.png);
 }
-.jstb_php {
-        background-image: url(../images/bt_php.png);
-}
-.jstb_python {
-        background-image: url(../images/bt_python.png);
-}
-.jstb_ruby {
-        background-image: url(../images/bt_ruby.png);
-}
+.jstb_green {
+        background-image: url(../images/bt_green.png);
