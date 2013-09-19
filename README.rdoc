@@ -1,7 +1,8 @@
 = Redmine Toolbar Mods
 
 Written by: Tavish Armstrong
-Updated by: Noah O'Neal
+
+Updated by: Noah O Neal
 
 Last updated: Sept. 17 2013
 
