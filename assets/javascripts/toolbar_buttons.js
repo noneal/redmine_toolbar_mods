@@ -1,7 +1,7 @@
-Event.observe(window, 'load', function() {
-  // add syntax highlighting buttons to the edit toolbar
+window.onload=function(){
+  // add colour buttons to the edit toolbar
   var i = 0,
-      buttons = ['SQL', 'JS', 'PHP', 'Python', 'Ruby'],
+      buttons = ['RED', 'BLUE', 'GREEN'],
       button, lowerButton;
 
   if (typeof(jsToolBar) != "undefined") {
@@ -15,7 +15,7 @@ Event.observe(window, 'load', function() {
           title: button,
           fn: {
             wiki: function() {
-              this.encloseLineSelection('<pre><code class="' + thatbutton + '">\n', '\n</code></pre>');
+              this.encloseSelection('%{color:' + thatbutton + '} ', '%');
             }
           }
         }
@@ -24,4 +24,4 @@ Event.observe(window, 'load', function() {
     // redraw toolbar to get the new buttons to show
     wikiToolbar.draw();
   }
-});
+};
