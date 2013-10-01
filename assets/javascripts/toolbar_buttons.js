@@ -1,7 +1,7 @@
 window.onload=function(){
   // add colour buttons to the edit toolbar
   var i = 0,
-      buttons = ['RED', 'BLUE', 'GREEN'],
+      buttons = ['THUMB', 'COLLAPSE', 'RED', 'BLUE', 'GREEN' ],
       button, lowerButton;
 
   if (typeof(jsToolBar) != "undefined") {
@@ -10,12 +10,36 @@ window.onload=function(){
       lowerButton = button.toLowerCase();
       jsToolBar.prototype.elements[lowerButton] = (function(lowerButton) {
         var thatbutton = lowerButton;
-        return {
+        if ( button == 'COLLAPSE' ) {
+          return {
+          type: 'button',
+          title: button,
+          fn: {
+            wiki: function() {
+              this.encloseSelection('{{collapse(Open...)\n', '\n}}');
+              }
+            }
+          }
+        }
+        else if ( button == 'THUMB' ) {
+          return {
+          type: 'button',
+          title: button,
+          fn: {
+            wiki: function() {
+              this.encloseSelection('{{thumbnail(', ')}}');
+              }
+            }
+          }
+        }
+        else {
+          return {
           type: 'button',
           title: button,
           fn: {
             wiki: function() {
               this.encloseSelection('%{color:' + thatbutton + '} ', '%');
+              }
             }
           }
         }

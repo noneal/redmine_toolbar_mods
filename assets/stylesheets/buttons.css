@@ -9,3 +9,11 @@
 }
 .jstb_green {
         background-image: url(../images/bt_green.png);
+}
+.jstb_collapse {
+        background-image: url(../images/bt_collapse.png);
+}
+.jstb_thumb {
+        background-image: url(../images/bt_thumb.png);
+}
+
